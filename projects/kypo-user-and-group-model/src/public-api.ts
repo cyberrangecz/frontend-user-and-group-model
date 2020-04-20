@@ -2,6 +2,8 @@
  * Public API Surface of kypo-user-and-group-model
  */
 
-export * from './lib/kypo-user-and-group-model.service';
-export * from './lib/kypo-user-and-group-model.component';
-export * from './lib/kypo-user-and-group-model.module';
+export * from './lib/user/user';
+export * from './lib/role/user-role';
+export * from './lib/group/group.model';
+export * from './lib/microservice/microservice.model';
+export * from './lib/microservice/microservice-role.model';
