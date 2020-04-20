@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "kypo-user-and-group-model": [
+        "dist/kypo-user-and-group-model/kypo-user-and-group-model",
+        "dist/kypo-user-and-group-model"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
