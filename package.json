@@ -9,9 +9,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ngcc",
-    "build-lib": "ng build kypo-user-and-group-model --prod",
+    "ci-test": "ng test --browsers ChromeHeadless --watch=false",
+    "build-library": "ng build kypo-user-and-group-model --prod",
     "create-package": "cd dist/kypo-user-and-group-model && npm pack",
-    "build-and-pack": "npm install && npm run build-lib && npm run create-package"
+    "build-and-pack": "npm install && npm run build-library && npm run create-package",
+    "ci-update-version": "cd ./projects/kypo-user-and-group-model/ && npm version $VERSION",
+    "ci-build-and-pack": "npm ci --cache .npm --prefer-offline && npm run build-library && npm run create-package",
+    "ci-publish-package": "cd dist/kypo-user-and-group-model && npm publish"
   },
   "husky": {
     "hooks": {
