@@ -8,5 +8,5 @@ To use the library you need to have installed:
 
 ## Usage
 To use the model in your project follow these steps:
-1. Run `npm install @kypo/user-and-group-model`
-2. Import classes like usual, for example `import { Group } from '@kypo/user-and-group-model`
+1. Run `npm install @muni-kypo-crp/user-and-group-model`
+2. Import classes like usual, for example `import { Group } from '@muni-kypo-crp/user-and-group-model`
