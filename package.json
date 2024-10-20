@@ -1,7 +1,6 @@
 {
     "name": "@muni-kypo-crp/user-and-group-model",
     "version": "0.0.0",
-    "type": "module",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -51,9 +50,9 @@
         "@types/jasmine": "^5.1.4",
         "@types/jasminewd2": "^2.0.13",
         "@types/node": "^22.6.1",
-        "@typescript-eslint/eslint-plugin": "^8.8.0",
-        "@typescript-eslint/parser": "^8.8.0",
-        "eslint": "^9.11.1",
+        "@typescript-eslint/eslint-plugin": "^8.8.1",
+        "@typescript-eslint/parser": "^8.8.1",
+        "eslint": "^9.12.0",
         "husky": "^9.1.6",
         "jasmine-core": "^5.3.0",
         "jasmine-spec-reporter": "^7.0.0",
