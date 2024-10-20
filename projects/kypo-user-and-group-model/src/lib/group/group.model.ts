@@ -18,7 +18,7 @@ export class Group {
    */
   getExpirationDateUTC(): Date {
     return new Date(
-      Date.UTC(this.expirationDate.getFullYear(), this.expirationDate.getMonth(), this.expirationDate.getDate())
+      Date.UTC(this.expirationDate.getFullYear(), this.expirationDate.getMonth(), this.expirationDate.getDate()),
     );
   }
 }
