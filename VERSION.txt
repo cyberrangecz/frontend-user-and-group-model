@@ -1,6 +1,0 @@
-18.0.0 Update to Angular 18
-16.0.0 Update to Angular 16.
-15.0.0 Update to Angular 15.
-14.0.0 Update to Angular 14.
-13.0.0 Update to Angular 13, CI/CD optimization
-12.0.2 Update gitlab CI config

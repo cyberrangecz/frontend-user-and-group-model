@@ -1,55 +1,55 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-    "kypo-user-and-group-model": {
-      "projectType": "library",
-      "root": "projects/kypo-user-and-group-model",
-      "sourceRoot": "projects/kypo-user-and-group-model/src",
-      "prefix": "kypo",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "tsConfig": "projects/kypo-user-and-group-model/tsconfig.lib.json",
-            "project": "projects/kypo-user-and-group-model/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/kypo-user-and-group-model/tsconfig.lib.prod.json"
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "kypo-user-and-group-model": {
+            "projectType": "library",
+            "root": "projects/kypo-user-and-group-model",
+            "sourceRoot": "projects/kypo-user-and-group-model/src",
+            "prefix": "kypo",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "tsConfig": "projects/kypo-user-and-group-model/tsconfig.lib.json",
+                        "project": "projects/kypo-user-and-group-model/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/kypo-user-and-group-model/tsconfig.lib.prod.json"
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/kypo-user-and-group-model/src/test.ts",
+                        "tsConfig": "projects/kypo-user-and-group-model/tsconfig.spec.json",
+                        "karmaConfig": "projects/kypo-user-and-group-model/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-eslint/builder:lint",
+                    "options": {
+                        "lintFilePatterns": [
+                            "projects/kypo-user-and-group-model/**/*.ts",
+                            "projects/kypo-user-and-group-model/**/*.component.html"
+                        ]
+                    }
+                }
             }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/kypo-user-and-group-model/src/test.ts",
-            "tsConfig": "projects/kypo-user-and-group-model/tsconfig.spec.json",
-            "karmaConfig": "projects/kypo-user-and-group-model/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "projects/kypo-user-and-group-model/**/*.ts",
-              "projects/kypo-user-and-group-model/**/*.component.html"
-            ]
-          }
         }
-      }
-    }
-  },
-  "schematics": {
-    "@angular-eslint/schematics:application": {
-      "setParserOptionsProject": true
     },
-    "@angular-eslint/schematics:library": {
-      "setParserOptionsProject": true
+    "schematics": {
+        "@angular-eslint/schematics:application": {
+            "setParserOptionsProject": true
+        },
+        "@angular-eslint/schematics:library": {
+            "setParserOptionsProject": true
+        }
+    },
+    "cli": {
+        "analytics": false
     }
-  },
-  "cli": {
-    "analytics": false
-  }
 }
