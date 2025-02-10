@@ -17,8 +17,8 @@
         ],
         "paths": {
             "kypo-user-and-group-model": [
-                "dist/kypo-user-and-group-model/kypo-user-and-group-model",
-                "dist/kypo-user-and-group-model"
+                "dist/user-and-group-model/user-and-group-model",
+                "dist/user-and-group-model"
             ]
         },
         "useDefineForClassFields": false

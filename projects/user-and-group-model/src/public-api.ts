@@ -1,5 +1,5 @@
 /*
- * Public API Surface of kypo-user-and-group-model
+ * Public API Surface of user-and-group-model
  */
 
 export * from './lib/user/user';
